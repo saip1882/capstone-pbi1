@@ -1,0 +1,13 @@
+data table: orders (previously orderbreakdown)
+
+lookup table: order details (previously listoforders)
+
+relation: one to many (data is flowing from order details table to orders table)
+
+order id has been spitted and only integer numbers have been kept (and datatype is text)
+date format is mm/dd/yyyy
+added column (order year, order month) derived from order date column in order details table.
+measure created: gross margin = (sum(profit)/sum(sales))*100
+
+created Row level security for Regional managers (north/south)
+tooltip on country (in maps in KPI page)
